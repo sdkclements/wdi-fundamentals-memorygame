@@ -9,13 +9,38 @@ var cardFour = "king";
 var choiceOne = cardTwo;
 var choiceTwo = cardOne;
 
-if (choiceOne !== choiceTwo) {
-	alert("sorry try again");
-}else if (choiceOne === choiceTwo) {
-	alert("its a match");
+
+// odd value for turn is player1s turn even is player 2
+var turn = 1
+
+var changeTurn = function(){
+	turn += 1;
 }
+// Decide whether to remove cards from table.
 
+var match = false;
+var removeMatches = function() {
+	// find cards that were matched and remove them from current game array
+}
+var checkForMatch = function(choiceOne, choiceTwo) {
+	if (choiceOne !== choiceTwo) {
+		alert("sorry try again");
+		changeTurn();
+	}else if (choiceOne === choiceTwo) {
+		match = true;
+		alert("its a match");
 
+	}
+}
+// Management of players turns
+
+// Manage Player Points
+var playerOneScore = 0;
+var playerTwoScore = 0;
+
+var addPlayerScore = function(playerOneScore, playerTwoScore){
+
+}
 //Using Switch instead of if /else -- try this first 
 // var cardValue = 1;
 
