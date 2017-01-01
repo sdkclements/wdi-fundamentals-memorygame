@@ -1,46 +1,63 @@
-console.log("JS file is connected to HTML! Woo!");
+
 
 // FIRST VAR TEST
-var cardOne = "queen";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "king";
+var cardOne = mainCardArray[0]
+var cardTwo = mainCardArray[1]
+var cardThree = mainCardArray[2]
+var cardFour = mainCardArray[3]
 
 var choiceOne = cardTwo;
 var choiceTwo = cardOne;
 
+var mainCardArray = ['queen', 'queen', 'king', 'king'];
 
-// odd value for turn is player1s turn even is player 2
-var turn = 1
 
-var changeTurn = function(){
-	turn += 1;
+
+
+//-----------------------------------
+// RESET BUTTON
+
+
+ var resetButton = document.getElementById('reset');
+ var alertUser = function(){
+	alert('button click works');
+	resetButton.className = '.resetClick';
 }
-// Decide whether to remove cards from table.
 
-var match = false;
-var removeMatches = function() {
-	// find cards that were matched and remove them from current game array
-}
-var checkForMatch = function(choiceOne, choiceTwo) {
-	if (choiceOne !== choiceTwo) {
-		alert("sorry try again");
-		changeTurn();
-	}else if (choiceOne === choiceTwo) {
-		match = true;
-		alert("its a match");
 
-	}
-}
-// Management of players turns
 
-// Manage Player Points
-var playerOneScore = 0;
-var playerTwoScore = 0;
+resetButton.addEventListener('click', alertUser);
 
-var addPlayerScore = function(playerOneScore, playerTwoScore){
+//---------------------------------
+
+//---------------------------------
+// HIDE AND REPLACE CARD
+// This replaces the cardOne howver the css styling is messed up as a result
+
+var addKingCard = function(){
+	cardToHide.parentNode.replaceChild(cardToAdd, cardToHide);
 
 }
+
+var cardToAdd = document.createElement("div");
+cardToAdd.className = "card";
+cardToAdd.id = "kingCard";
+var cardToHide = document.getElementById('cardOne');
+
+
+
+
+
+cardToHide.addEventListener('click', addKingCard);
+
+// Try and change class based on a click for all cards
+
+var flipCard = function(obj, card) {
+	if 
+
+}
+
+var someCard = 
 //Using Switch instead of if /else -- try this first 
 // var cardValue = 1;
 

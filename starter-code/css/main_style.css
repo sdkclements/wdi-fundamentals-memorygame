@@ -98,24 +98,103 @@ html, body {
 .card {
 	float: left;
 	margin: 5%;
+	
 }
-
-
-img {
-	max-height: 100px;
-	width: auto;
+#cardOne{
+	height: 95px;
+	width: 75px;
 	border-color: black;
 	border-style: solid;
 	border-width: 4px;
 	border-radius: 5px;
 
-}
+	background-image: url("../images/cardback.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 
-img:hover {
-	border-color: red;
+}
+#cardTwo{
+	height: 95px;
+	width: 75px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/cardback.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 	
+}
+#cardThree{
+	height: 95px;
+	width: 75px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/cardback.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#cardFour{
+	height: 95px;
+	width: 75px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/cardback.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#cardOne:hover{
+	border-color: red;
 
 }
+#cardTwo:hover{
+	border-color: red;
+
+}
+#cardThree:hover{
+	border-color: red;
+
+}
+#cardFour:hover{
+	border-color: red;
+
+}
+
+#queenCard{
+	height: 95px;
+	width: 75px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/queen_card.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#kingCard{
+	float: left;
+	margin:;
+	height: 95px;
+	width: 75px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/king_card.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+.resetClick {
+	background: blue;
+}
+
+
 footer{
 	background: pink;
 	position: absolute;
