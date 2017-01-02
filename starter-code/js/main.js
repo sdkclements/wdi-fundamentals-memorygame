@@ -1,107 +1,125 @@
-
-
 // FIRST VAR TEST
-var cardOne = mainCardArray[0]
-var cardTwo = mainCardArray[1]
-var cardThree = mainCardArray[2]
-var cardFour = mainCardArray[3]
+// var cardOne = mainCardArray[0];
+// var cardTwo = mainCardArray[1];
+// var cardThree = mainCardArray[2];
+// var cardFour = mainCardArray[3];
 
-var choiceOne = cardTwo;
-var choiceTwo = cardOne;
+// var choiceOne = cardTwo;
+// var choiceTwo = cardOne;
 
-var mainCardArray = ['queen', 'queen', 'king', 'king'];
-
-
-
-
-//-----------------------------------
-// RESET BUTTON
+// var gameBoard = document.getElementById('game-board');
+// var mainCardArray = ['queen', 'queen', 'king', 'king'];
+var cardsInPlay = [];
+// var mainCardArray = ['queen', 'queen', 'king', 'king'];
+var cards = ['queen', 'queen', 'king', 'king'];
 
 
- var resetButton = document.getElementById('reset');
- var alertUser = function(){
-	alert('button click works');
-	resetButton.className = '.resetClick';
+var checkForMatch = function(arr) {
+
+    if (arr[0] !== arr[1]) {
+        alert('Try again')
+        
+    }else if (arr[0] === arr[1]) {
+        // match = true;
+        alert("its a match");
+
+    }
 }
 
 
+var gameBoard = document.getElementById('game-board');
+function createBoard() {
+    
+    for (var i = 0; i < cards.length; i++) {
+       var cardL = document.createElement('div');
+       cardL.className = 'card';
 
-resetButton.addEventListener('click', alertUser);
+       cardL.setAttribute('data-card', cards[i]);
+       cardL.addEventListener('click', twoInPlayCheck);
+       
+       gameBoard.appendChild(cardL);
+       gameBoard.appendChild(cardL);
 
-//---------------------------------
+    }
+};
 
-//---------------------------------
-// HIDE AND REPLACE CARD
-// This replaces the cardOne howver the css styling is messed up as a result
+function twoInPlayCheck() {
+    cardsInPlay.push(this.getAttribute('data-card'));
+console.log(this.getAttribute('data-card'));
 
-var addKingCard = function(){
-	cardToHide.parentNode.replaceChild(cardToAdd, cardToHide);
+if (this.getAttribute('data-card') === 'king'){
+    this.innerHTML = "<div id='kingCard'>";
+}else{
+    this.innerHTML = "<div id='queenCard'>";
+}
+    if (cardsInPlay.length === 2) {
+        
+        checkForMatch(cardsInPlay);
 
+        cardsInPlay = [];
+    }
 }
 
-var cardToAdd = document.createElement("div");
-cardToAdd.className = "card";
-cardToAdd.id = "kingCard";
-var cardToHide = document.getElementById('cardOne');
+$(document).ready(function(){
+    $('.reset').click(function() {
+        $('.card').remove();
+        createBoard();
+    });
+});
 
 
 
 
 
-cardToHide.addEventListener('click', addKingCard);
+// var resetButton = document.getElementById('reset');
+// resetButton.addEventListener('click', resetGameBoard);
 
-// Try and change class based on a click for all cards
+createBoard();
 
-var flipCard = function(obj, card) {
-	if 
 
-}
 
-var someCard = 
-//Using Switch instead of if /else -- try this first 
-// var cardValue = 1;
 
-// switch (cardValue) {
-// 	case 0:
-// 		card = 'queen';
-// 		break;
-// 	case 1:
-// 		card = 'king';
-// 		break;
-	// case 2:
-	// 	card = 'three';
-	// 	break;
-	// case 3:
-	// 	card = 'four';
-	// 	break;
-	// case 4:
-	// 	card = 'five';
-	// 	break;
-	// case 5:
-	// 	card = 'six';
-	// 	break;
-	// case 6:
-	// 	card = 'seven';
-	// 	break;
-	// case 7:
-	// 	card = 'eight';
-	// 	break;						
-	// case 8:
-	// 	card = 'nine';
-	// 	break;
-	// case 9:
-	// 	card = 'ten';
-	// 	break;
-	// case 10:
-	// 	card = 'jack';
-	// 	break;
-	// case 11:
-	// 	card = 'ace';
-	// 	break;
-	// case 12:
-	// 	card = 'two';
-	// 	break;
-	// default:
-	// 	card = null;
-	// 	alert('Wrong value for a card');
-	// }
+
+
+// var createCards = function() {
+    
+//     var arrayLength = mainCardArray.length
+//     var singleCardCreation = document.createElement('div');
+//     var card = document.getElementsByClassName('.card');
+    
+
+//     for (var i = 0; i < arrayLength; i++) {
+
+//         if (i === 0) { // create a div element for each card assign it a card class
+//             var newCard1 = document.createElement('div');
+//             newCard1.className = 'card';
+
+//             gameBoard.appendChild(newCard1);
+//         }
+//         if (i === 1) { // create a div element for each card assign it a card class
+//             var newCard2 = document.createElement('div');
+//             newCard2.className = 'card';
+//             gameBoard.appendChild(newCard2);
+//         }
+//         if (i === 2) { // create a div element for each card assign it a card class
+//             var newCard3 = document.createElement('div');
+//             newCard3.className = 'card';
+//             gameBoard.appendChild(newCard3);
+//         }
+//         if (i === 3) { // create a div element for each card assign it a card class
+//             var newCard4 = document.createElement('div');
+//             newCard4.className = 'card';
+//             gameBoard.appendChild(newCard4);
+//         }
+
+
+
+//     }
+
+
+// };
+// createCards();
+
+
+
+

@@ -98,6 +98,16 @@ html, body {
 .card {
 	float: left;
 	margin: 5%;
+	height: 95px;
+	width: 75px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+
+	background-image: url("../images/cardback.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 	
 }
 #cardOne{
