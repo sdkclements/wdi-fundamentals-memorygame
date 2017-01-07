@@ -3,7 +3,7 @@ html, body {
 	background: #5182A8;
 }
 .cwrapper {
-	height: 100%;
+	height: 90%;
 	
 	/*background: yellow;*/
 	
@@ -25,19 +25,19 @@ html, body {
 }
 
 .tcontent h1 {
-	font-size: 30px;
+	font-size: 15px;
 	color: black ;
 }
 .tcontent h2 {
-	font-size: 25px;
-	font-weight: 700;
+	font-size: 30px;
+	font-weight: 400;
 }
 
 .navbar {
-	height: 90px;
+	height: 8%;
 	margin-top: 5px;
-	margin-right: 10%;
-	margin-left: 10%;
+	margin-right: 40%;
+	margin-left: 40%;
 	background: grey;
 	text-align: center;
 	font-size: 15px;
@@ -51,7 +51,7 @@ html, body {
 	display: block;
 	background-color: #ffbf00;
 	color: white;
-	padding: 35px;
+	padding: 15px;
 	border-color: black;
 	border-style: solid;
 	border-width: 2px;
@@ -62,18 +62,21 @@ html, body {
 	background-color: #ee5f3c;
 }
 .gameBoard {
-	height: 50%;
-	width: 80%;
+	height: auto;
+	width: auto;
+	margin-bottom: 2%;
+	
+
 	display: inline-block;
 	background: red;
-	margin-top: 2%;
-	margin-right: 10%;
-	margin-bottom: 2%;
-	margin-left: 10%;
+	margin-top: 1%;
+	margin-right: 2%;
+	margin-bottom: 1%;
+	margin-left: 2%;
 	border-color: black;
 	border-style: solid;
-	border-width: 2px;
-	border-radius: 5px;
+	border-width: 1px;
+	border-radius: 3px;
 }
 /*.info {
 	float: left;
@@ -86,7 +89,9 @@ html, body {
 
 .allCards {
 	float: left;
-	margin: 5px;
+	height: auto;
+
+	margin: 1px;
 	background: orange;
 	display: inline;
 	border-color: black;
@@ -97,9 +102,9 @@ html, body {
 
 .card {
 	float: left;
-	margin: 5%;
-	height: 95px;
-	width: 75px;
+	margin: 8px;
+	height: 85px;
+	width: 65px;
 	border-color: black;
 	border-style: solid;
 	border-width: 4px;
@@ -110,73 +115,12 @@ html, body {
 	background-repeat: no-repeat;
 	
 }
-#cardOne{
-	height: 95px;
-	width: 75px;
-	border-color: black;
-	border-style: solid;
-	border-width: 4px;
-	border-radius: 5px;
 
-	background-image: url("../images/cardback.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-
-}
-#cardTwo{
-	height: 95px;
-	width: 75px;
-	border-color: black;
-	border-style: solid;
-	border-width: 4px;
-	border-radius: 5px;
-	background-image: url("../images/cardback.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	
-}
-#cardThree{
-	height: 95px;
-	width: 75px;
-	border-color: black;
-	border-style: solid;
-	border-width: 4px;
-	border-radius: 5px;
-	background-image: url("../images/cardback.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#cardFour{
-	height: 95px;
-	width: 75px;
-	border-color: black;
-	border-style: solid;
-	border-width: 4px;
-	border-radius: 5px;
-	background-image: url("../images/cardback.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#cardOne:hover{
-	border-color: red;
-
-}
-#cardTwo:hover{
-	border-color: red;
-
-}
-#cardThree:hover{
-	border-color: red;
-
-}
-#cardFour:hover{
-	border-color: red;
-
-}
 
 #queenCard{
-	height: 95px;
-	width: 75px;
+	float: left;
+	height: 85px;
+	width: 65px;
 	border-color: black;
 	border-style: solid;
 	border-width: 4px;
@@ -188,9 +132,8 @@ html, body {
 }
 #kingCard{
 	float: left;
-	margin:;
-	height: 95px;
-	width: 75px;
+	height: 85px;
+	width: 65px;
 	border-color: black;
 	border-style: solid;
 	border-width: 4px;
@@ -200,27 +143,151 @@ html, body {
 	background-repeat: no-repeat;
 
 }
-.resetClick {
-	background: blue;
-}
-
-
-footer{
-	background: pink;
-	position: absolute;
-  	right: 0;
-  	bottom: 0;
-  	left: 0;
-	height: 10%;
-	margin-right: 10%;
-	margin-left: 10%;
+#aceCard{
+	float: left;
+	height: 85px;
+	width: 65px;
 	border-color: black;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 4px;
 	border-radius: 5px;
-	text-align: center;
-	font-size: 20px;
-		
+	background-image: url("../images/aceCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#twoCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/twoCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#threeCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/threeCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#fourCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/fourCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#fiveCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/fiveCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#sixCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/sixCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#sevenCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/sevenCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#eightCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/eightCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#nineCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/nineCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#tenCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/tenCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+#jackCard{
+	float: left;
+	height: 85px;
+	width: 65px;
+	border-color: black;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5px;
+	background-image: url("../images/jackCard.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+.resetClick {
+	background: blue;
 }
 .myname {
 
@@ -234,7 +301,32 @@ footer{
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
                0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
+               0 5px 10px rgba(0,0,0,.65),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+}
+.lower{
+	margin-top: 20%;
+	margin-bottom: -10%;
+}
+
+footer {
+	background: pink;
+	position: relative;
+	width: 70%;
+  	
+  	bottom: 0;
+  	
+	height: 8%;
+	margin-right: 10%;
+	
+	margin-left: 10%;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 20px;
+	clear: both;
+		
 }

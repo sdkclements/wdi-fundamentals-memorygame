@@ -4,36 +4,44 @@
 		<title> Memory Card Game </title>
 		<link rel="stylesheet" href="css/reset_style.css">
 		<link rel="stylesheet" href="css/main_style.css">
-
 	</head>
 	<body>
 		<div class="cwrapper">
-		<nav class="navbar"> 
-			<a href="#"> Instructions</a> <a href="#"> Game </a>
+			<nav class="navbar">
+				<center>
+				<a href="#"> Instructions</a> <a href="#"> Game </a>
+				</center>
 			</nav>
 			<hr>
+			<br>
 			<div class="tcontent">
 				<center> <h1> Memory Game </h1> </center>
 				<h2> Instructions: </h2>
 				<p> <i> Concentration</i>, also known as<i> Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexexso, or Paris</i>, is a card game in which all of the cards are laid facedown on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
 				<br>
 				<br>
-				<h4><center>This game is best! It keeps you sharp and its quick and fun!</center>
+			</div>
+			<div class="inter-text">
+				<h4><center>In its current state, this game is not very fun.</center>
 				</h4>
 			</div>
-
 			<div class="gameBoard">
 				<div class="actionButtons">
-				<button id="reset"> Reset </button>
-
+					<button id="reset"> Reset </button>
+					<p> Player One Score:<span id='p_1'> 0 </span></p>
+					<p> Player Two Score:<span id='p_2'> 0 </span></p>
 				</div>
-
 				<div class="allCards" id="game-board">
-				
+					
 					
 				</div>
 			</div>
+			<br>
 			
+			
+		</div>
+		<br>
+		<div class="lower">
 			<footer>
 				<p>
 					<em>Created by: <div class="myname">Sam Clements</div> to torture the future developer within me....</em>
@@ -43,6 +51,5 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
-
 	</body>
 </html>
