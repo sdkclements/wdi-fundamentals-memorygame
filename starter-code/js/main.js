@@ -22,6 +22,7 @@ var checkForMatch = function(arr) {
 
 // }
 
+
 var gameBoard = document.getElementById('game-board');
 
 function createBoard() {
