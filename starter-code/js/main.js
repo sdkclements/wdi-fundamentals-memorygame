@@ -1,5 +1,3 @@
-
-
 var cardsInPlay = [];
 // var mainCardArray = ['queen', 'queen', 'king', 'king'];
 var cards = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'queen', 'queen', 'queen', 'king', 'king', 'king', 'king'];
@@ -9,7 +7,7 @@ var cards = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'ni
 var checkForMatch = function(arr) {
 
     if (arr[0] !== arr[1]) {
-        
+
 
     } else if (arr[0] === arr[1]) {
         // match = true;
@@ -79,7 +77,7 @@ function twoInPlayCheck() {
     }
     if (this.getAttribute('data-card') === 'jack') {
         this.innerHTML = "<div id='jackCard'>";
-    } 
+    }
     if (this.getAttribute('data-card') === 'queen') {
         this.innerHTML = "<div id='queenCard'>";
     }
@@ -93,4 +91,3 @@ function twoInPlayCheck() {
     }
 }
 createBoard();
-
