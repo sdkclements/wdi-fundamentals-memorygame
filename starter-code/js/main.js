@@ -29,11 +29,12 @@ function createBoard() {
         var cardL = document.createElement('div');
         cardL.className = 'card';
 
+
         cardL.setAttribute('data-card', cards[i]);
         cardL.addEventListener('click', twoInPlayCheck);
 
         gameBoard.appendChild(cardL);
-        gameBoard.appendChild(cardL);
+        //gameBoard.appendChild(cardL);
 
     }
 };
