@@ -34,17 +34,27 @@ function createBoard() {
         cardL.addEventListener('click', twoInPlayCheck);
 
         gameBoard.appendChild(cardL);
+
+        //I am a bit confused why the explanations had a second gameBoard
+        //perhaps this is for when we flip cards back over.
         //gameBoard.appendChild(cardL);
 
     }
 };
+
+// function resetFace(id) {
+//     // this.document.querySelector()
+//     var elem = document.getElementById(id);
+//     return elem.parentNode.removeChild(elem);
+// };
+
 
 function twoInPlayCheck() {
     cardsInPlay.push(this.getAttribute('data-card'));
     console.log(this.getAttribute('data-card'));
 
     if (this.getAttribute('data-card') === 'king') {
-        this.innerHTML = "<div id='kingCard'>";
+        this.innerHTML = "<div id='kingCard' onClick='resetFace()'>";
     }
     if (this.getAttribute('data-card') === 'ace') {
         this.innerHTML = "<div id='aceCard'>";
