@@ -54,6 +54,9 @@ function twoInPlayCheck() {
     console.log(this.getAttribute('data-card'));
 
     if (this.getAttribute('data-card') === 'king') {
+        // "<div id='kingCard' onClick='resetFace()'>"
+        // should I add a connection to a function to change the face back now?
+        // change css to modify the class name and create a king(or other card) id
         this.innerHTML = "<div id='kingCard' onClick='resetFace()'>";
     }
     if (this.getAttribute('data-card') === 'ace') {
